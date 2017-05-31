@@ -93,7 +93,17 @@ int main()
             }
         else if( izbor == 5 )
         {
-
+           unsigned long long int barkod_pretraga;
+            cout<<"Upisite bar kod po kojem zelite naci artikl ";
+            cin>> barkod_pretraga;
+            bool pronadjen=false;
+            for(int i=0; i<brojArtikla;i++)
+            {
+                if(barkod_pretraga==barkod[i])
+                    cout<<"Unesite novu cijenu: "<<endl;
+                cin>> cijena [i];
+                break;
+            }
         }
         else if( izbor == 6 )
         {
