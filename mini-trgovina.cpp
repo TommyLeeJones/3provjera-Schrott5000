@@ -76,14 +76,19 @@ int main()
             {
                 if(artikl_pretraga == artikli[i])
                 {
-                    pronadjen==true;
+                    pronadjen=true;
                     cout << barkod[i]<<"\t"<< artikli[i]<<"\t" << cijena[i]<< endl;
-
+                    break;
                 }
             }
-        }
+            if(pronadjen==false)
+            {
+                cout<<"artikl nije pronağen"<<endl;
+            }
+            }
         else if( izbor == 5 )
         {
+
         }
         else if( izbor == 6 )
         {
