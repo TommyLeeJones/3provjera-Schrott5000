@@ -13,6 +13,18 @@ int main()
     ofstream datotekaUpisivanje;
     ifstream datotekaUcitavanje;
 
+                datotekaUcitavanje.open ("artikli.txt");
+                while(1)
+                {
+                   datotekaUcitavanje >> brRacuna[brojArtikla];
+                    if(datotekaUcitavanje.eof()==true)
+                        break;
+                    datotekaUcitavanje.ignore();
+                    getline(datotekaUcitavanje,artikli[brojArtikla]);
+                    datotekaUcitavanje>> cijena[brojArtikla];
+                    brojArtikla++;
+                }
+
     while(1)
     {
         cout << "Glavni izbornik" << endl;
@@ -107,6 +119,7 @@ int main()
         }
         else if( izbor == 6 )
         {
+
         }
         else if( izbor == 7 )
         {
